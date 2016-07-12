@@ -1,0 +1,1248 @@
+
+/*页面总父级*/
+#layoutApp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*min-width: 1103px;*/
+	overflow: hidden;
+}
+
+/*头部*/
+#dynamicLayout_0 {
+	position: absolute;
+	background: #000;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 49px;
+	width: 100%;
+	z-index: 110;
+}
+#dynamicLayout_0 .header {
+	height: 49px;
+    background: #252525;
+    border-bottom: 0;
+    position: relative;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(51,51,51,.5);
+}
+#dynamicLayout_0 .header a.logo {
+	width: 113px;
+	height: 36px;
+	display: inline-block;
+	float: left;
+	margin: 5px 0 0 10px;
+	background: url(../images/SkyDrive/frame-icon.png) no-repeat;
+	background-position: 0 0;
+}
+#dynamicLayout_0 .header .navs {
+	/*width: 400px;*/
+	height: 49px;
+	padding: 0 0 0 25px;
+	float: left;
+}
+#dynamicLayout_0 .header .navs a.list {
+	display: block;
+	float: left;
+	width: 90px;
+	height: 49px;
+	text-align: center;
+	line-height: 49px;
+	background: #252525;
+	color: #d8d8d8;
+	font-weight: normal;
+	font-size: 18px;
+}
+#dynamicLayout_0 .header .navs a.list:hover {
+	background: #0f0f0f;
+}
+#dynamicLayout_0 .header .navs a.active {
+	background: #0f0f0f;
+	font-weight: bold;
+	color: #fff;
+}
+#dynamicLayout_0 .header .navs .skydrive {
+	position: relative;
+}
+#dynamicLayout_0 .header .navs em.arrow-down {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	right: 9px;
+	top: 18px;
+	background: url(../images/SkyDrive/frame-icon.png) no-repeat;
+	background-position: -89px -45px;
+}
+#dynamicLayout_0 .header .navs .seprate {
+	display: inline-block;
+	float: left;
+	width: 2px;
+	height: 49px;
+	background: #2a2b2d; 
+}
+#dynamicLayout_0 .header .info {
+	font-family: "宋体";
+	margin-top: 7px;
+	float: right;
+}
+#dynamicLayout_0 .header .info>ul {
+	/*width: 667px;*/
+	height: 36px;
+	/*background: #FF0; */
+}
+#dynamicLayout_0 .header .info>ul li {
+	padding-top: 10px;
+	height: 16px;
+	float: left;
+}
+/*ad*/
+#dynamicLayout_0 .header .info>ul li.ad {
+	margin-right: 13px;	/**/
+}
+#dynamicLayout_0 .header .info>ul li.ad a {
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	color: #e15f00;
+}
+#dynamicLayout_0 .header .info>ul li.ad a:hover {
+	text-decoration: underline;
+}
+/*form*/
+#dynamicLayout_0 .header .info>ul li.search {
+	padding: 6px 9px 0 0;
+	height: 22px;
+}
+#dynamicLayout_0 .header .info>ul li.search input {
+	float: left; 
+}
+#dynamicLayout_0 .header .info>ul li.search input.search-query {
+	width: 114px;
+	height: 22px;
+	color: #999999;
+	font-size: 12px;
+	border: none;
+	text-indent: 4px;
+}
+#dynamicLayout_0 .header .info>ul li.search input.search-button {
+	width: 38px;
+	height: 22px;
+	color: #333333;
+	font-size: 12px;
+	outline: none;
+	border: none;
+	background: -webkit-linear-gradient(top, #ffffff, #c3c3c3);
+	background: -moz-linear-gradient(top, #ffffff, #c3c3c3);
+	background: -o-linear-gradient(top, #ffffff, #c3c3c3);
+	background: -ms-linear-gradient(top, #ffffff, #c3c3c3);			/* IE 10 && IE Edge */
+	background: linear-gradient(top, #ffffff, #c3c3c3);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffff,endColorstr=#c3c3c3); 
+	/* ie7.ie8.ie9 gradientType=1代表横向渐变，gradientType=0代表纵向淅变 */
+	+background: #e0e0e0;	/* ie6.ie7 hack */
+	cursor: pointer;
+}
+/*user-name*/
+#dynamicLayout_0 .header .info>ul li.user-name {
+	position: relative;
+	border-left: 1px solid #393939;
+	border-right: 1px solid #393939;
+	padding: 0 7px 0 7px;
+	margin-top: 9px;
+}
+#dynamicLayout_0 .header .info>ul li.user-name:hover .userinfo {
+	display: block;
+}
+#dynamicLayout_0 .header .info>ul li.user-name .username {
+	color: #d8d8d8;
+	position: relative;
+    top: -3px;
+	left: -3px;
+}
+#dynamicLayout_0 .header .info>ul li.user-name .identity {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: relative;
+    top: 1px;
+	background: url(../images/SkyDrive/h-vip-icon-all.png) no-repeat;
+	background-position: -1px 0;
+}
+#dynamicLayout_0 .header .info>ul li.user-name .arrow-down {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	position: relative;
+	right: 3px;
+    top: -3px;
+	background: url(../images/SkyDrive/frame-icon.png) no-repeat;
+	background-position: -89px -45px;
+}
+/*用户信息下拉菜单*/
+#dynamicLayout_0 .header .info>ul li.user-name .userinfo {
+	display: none;
+	position: absolute;
+    top: 23px;
+    left: 22px;
+	width: 114px;
+	height: 159px;
+	border-radius: 4px;
+	border: 1px solid #afafaf;
+	border-top: none;
+	background: #f6f6f9;
+    box-shadow: 0 0 5px rgba(51,51,51,.3);
+	z-index: 200;
+}
+#dynamicLayout_0 .header .info>ul li.user-name .userinfo .triangle {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #f6f6f9;
+	_border-left: 8px solid #f6f6f9;	/*只有IE6认识，颜色值要视背景颜色而定*/
+	_border-right: 8px solid #f6f6f9;
+	position: absolute;
+	top: -7px;
+	right: 30px;
+}
+#dynamicLayout_0 .header .info>ul li.user-name .userinfo ul {
+	padding: 8px 0 7px;
+	zoom: 1;	/*兼容ie低版本，触发haslayout*/
+}
+#dynamicLayout_0 .header .info>ul li.user-name .userinfo li {
+	margin-top: 4px;
+	padding-top: 0;
+	height: 30px;
+}
+#dynamicLayout_0 .header .info>ul li.user-name .userinfo li a {
+	display: block;
+	width: 114px;
+	height: 30px;
+	text-align: left;
+	text-indent: 20px;
+	line-height: 30px;
+	color: #888888;
+}
+#dynamicLayout_0 .header .info>ul li.user-name .userinfo li a:hover {
+	background: #e0e1e5;
+	color: #333333;
+}
+#dynamicLayout_0 .header .info>ul li.user-name .userinfo li.seprateLine {
+	height: 2px;
+	width: 92px;
+	padding: 1px 11px;
+}
+#dynamicLayout_0 .header .info>ul li.user-name .userinfo li.seprateLine span {
+	display: block;
+	width: 92px;
+	height: 1px;
+	overflow: hidden;
+	background: #ebebec;
+}
+#dynamicLayout_0 .header .info>ul li.user-name .userinfo li.seprateLine span.white {
+	background: #ffffff;
+}
+/*vip-center*/
+#dynamicLayout_0 .header .info>ul li.vip-center {
+	height: 24px;
+	padding: 6px 8px 0 12px;
+}
+#dynamicLayout_0 .header .info>ul li.vip-center .vip-button {
+	display: inline-block;
+	width: 70px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 4px;
+	background: #e82b1a;
+	color: #d8d8d8;
+}
+/*download*/
+#dynamicLayout_0 .header .info>ul li.download {
+	padding: 0 8px 0 12px;
+	margin-top: 9px;
+	position: relative;
+	top: 2px;
+	border-left: 1px solid #393939;
+	border-right: 1px solid #393939;
+}
+#dynamicLayout_0 .header .info>ul li.download .client-dload {
+	color: #d8d8d8;
+}
+/*notice*/
+#dynamicLayout_0 .header .info>ul li.NOTICE {
+	padding: 0 8px 0 12px;
+	margin-top: 9px;
+	position: relative;
+	top: 2px;
+	border-right: 1px solid #393939;
+}
+#dynamicLayout_0 .header .info>ul li.NOTICE .notice {
+	color: #d8d8d8;
+}
+/*more*/
+#dynamicLayout_0 .header .info>ul li.more {
+	position: relative;
+	padding: 0 10px 0 12px;
+	margin-top: 8px;
+	position: relative;
+	top: 2px;
+}
+#dynamicLayout_0 .header .info>ul li.more:hover .more-down-list {
+	display: block;
+}
+#dynamicLayout_0 .header .info>ul li.more span {
+	color: #d8d8d8;
+}
+#dynamicLayout_0 .header .info>ul li.more .arrow-down {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../images/SkyDrive/frame-icon.png) no-repeat;
+	background-position: -89px -45px;
+}
+/*更多下拉菜单*/
+#dynamicLayout_0 .header .info>ul li.more .more-down-list {
+	display: none;
+	position: absolute;
+    top: 23px;
+    right: 0px;
+	width: 114px;
+	height: 303px;
+	border-radius: 4px;
+	border: 1px solid #afafaf;
+	border-top: none;
+	background: #f6f6f9;
+    box-shadow: 0 0 5px rgba(51,51,51,.3);
+	z-index: 200;
+}
+#dynamicLayout_0 .header .info>ul li.more .more-down-list .triangle {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #f6f6f9;
+	_border-left: 8px solid #f6f6f9;	/*只有IE6认识，颜色值要视背景颜色而定*/
+	_border-right: 8px solid #f6f6f9;
+	position: absolute;
+	top: -7px;
+	right: 6px;
+}
+#dynamicLayout_0 .header .info>ul li.more .more-down-list ul {
+	padding: 8px 0 7px;
+	zoom: 1;	/*兼容ie低版本，触发haslayout*/
+}
+#dynamicLayout_0 .header .info>ul li.more .more-down-list li {
+	margin-top: 4px;
+	padding-top: 0;
+	height: 30px;
+}
+#dynamicLayout_0 .header .info>ul li.more .more-down-list li a {
+	display: block;
+	width: 114px;
+	height: 30px;
+	text-align: left;
+	text-indent: 20px;
+	line-height: 30px;
+	color: #888888;
+}
+#dynamicLayout_0 .header .info>ul li.more .more-down-list li a:hover {
+	background: #e0e1e5;
+	color: #333333;
+}
+#dynamicLayout_0 .header .info>ul li.more .more-down-list li.seprateLine {
+	height: 2px;
+	width: 92px;
+	padding: 1px 11px;
+}
+#dynamicLayout_0 .header .info>ul li.more .more-down-list li.seprateLine span {
+	display: block;
+	width: 92px;
+	height: 1px;
+	overflow: hidden;
+	background: #ebebec;
+}
+#dynamicLayout_0 .header .info>ul li.more .more-down-list li.seprateLine span.white {
+	background: #ffffff;
+}
+
+/*侧边栏*/
+#layoutAside {
+	position: absolute;
+	top: 49px;
+	bottom: 0;
+	left: 0;
+	width: 209px;
+	border-right: 1px solid #c6c8cc;
+	z-index: 100;
+	font-family: "宋体";
+}
+#layoutAside .aside-wrap {
+	width: 209px;
+	height: 100%;
+	background: #f0f0f0;
+	position: relative;
+	padding-top: 10px;
+}
+/* ul */
+#layoutAside .aside-wrap .menu-list {
+}
+#layoutAside .aside-wrap .menu-list li {
+	margin-top: 3px;
+}
+#layoutAside .aside-wrap .menu-list li a {
+	display: block;
+	width: 209px;
+	height: 31px;
+	line-height: 31px;
+	font-size: 14px;
+	color: #333333;
+	border-top: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
+	background: #f0f0f0;
+}
+#layoutAside .aside-wrap .menu-list li a.active {
+	background: #e1e1e1;
+	color: #333380;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid #f8f8f8;
+	font-weight: 700;
+	background: -webkit-linear-gradient(top, #dbdbdb, #e3e3e3);
+	background: -moz-linear-gradient(top, #dbdbdb, #e3e3e3);
+	background: -o-linear-gradient(top, #dbdbdb, #e3e3e3);
+	background: -ms-linear-gradient(top, #dbdbdb, #e3e3e3);			/* IE 10 && IE Edge */
+	background: linear-gradient(top, #dbdbdb, #e3e3e3);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#dbdbdb,endColorstr=#e3e3e3); 
+	/* ie7.ie8.ie9 gradientType=1代表横向渐变，gradientType=0代表纵向淅变 */
+	+background: #e5e5e5;	/* ie6.ie7 hack */
+}
+#layoutAside .aside-wrap .menu-list li a.active span.aside-icon {
+	background: url(../images/SkyDrive/navigator_acc381c.png) no-repeat;
+	background-position: -23px 0;
+}
+#layoutAside .aside-wrap .menu-list li a:hover {
+	background: #e5e5e5;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid #f8f8f8;
+	background: -webkit-linear-gradient(top, #dbdbdb, #e3e3e3);
+	background: -moz-linear-gradient(top, #dbdbdb, #e3e3e3);
+	background: -o-linear-gradient(top, #dbdbdb, #e3e3e3);
+	background: -ms-linear-gradient(top, #dbdbdb, #e3e3e3);			/* IE 10 && IE Edge */
+	background: linear-gradient(top, #dbdbdb, #e3e3e3);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#dbdbdb,endColorstr=#e3e3e3); 
+	/* ie7.ie8.ie9 gradientType=1代表横向渐变，gradientType=0代表纵向淅变 */
+	+background: #e5e5e5;	/* ie6.ie7 hack */
+}
+#layoutAside .aside-wrap .menu-list li span.text {
+	display: inline-block;
+	width: 151px;
+	height: 31px;
+	padding-left: 32px;
+}
+#layoutAside .aside-wrap .menu-list li span.aside-icon {
+	display: inline-block;
+	width: 23px;
+	height:22px;
+	background: url(../images/SkyDrive/navigator_acc381c.png) no-repeat;
+	background-position: 0 0;
+	position: relative;
+	left: 0;
+	top: 6px;
+}
+/*pic*/
+#layoutAside .aside-wrap .menu-list li span.icon2 {
+	background-position: 0 -22px;
+}
+#layoutAside .aside-wrap .menu-list li a.pic:hover span.icon2 {
+	background-position: -23px -22px;
+}
+/*doc*/
+#layoutAside .aside-wrap .menu-list li span.icon3 {
+	background-position: 0 -44px;
+}
+#layoutAside .aside-wrap .menu-list li a.doc:hover span.icon3 {
+	background-position: -23px -44px;
+}
+/*video*/
+#layoutAside .aside-wrap .menu-list li span.icon4 {
+	background-position: 0 -89px;
+}
+#layoutAside .aside-wrap .menu-list li a.video:hover span.icon4 {
+	background-position: -23px -89px;
+}
+/*seed*/
+#layoutAside .aside-wrap .menu-list li span.icon5 {
+	background-position: 0 -201px;
+}
+#layoutAside .aside-wrap .menu-list li a.seed:hover span.icon5 {
+	background-position: -23px -201px;
+}
+/*music*/
+#layoutAside .aside-wrap .menu-list li span.icon6 {
+	background-position: 0 -66px;
+}
+#layoutAside .aside-wrap .menu-list li a.music:hover span.icon6 {
+	background-position: -23px -66px;
+}
+/*other*/
+#layoutAside .aside-wrap .menu-list li span.icon7 {
+	background-position: 0 -177px;
+}
+#layoutAside .aside-wrap .menu-list li a.other:hover span.icon7 {
+	background-position: -23px -177px;
+}
+#layoutAside .aside-wrap .menu-list li span.item-title {
+	position: relative;
+	top: -1px;
+    left: 3px;
+}
+
+/*aside 分割线*/
+#layoutAside .aside-wrap .item-separator {
+	margin: 5px 0;
+    border-top: #dce1e6 1px solid;
+    border-bottom: #f7f9fb 1px solid;
+    height: 0;
+}
+/*my share*/
+#layoutAside .aside-wrap .my-share li, #layoutAside .aside-wrap .recycle-bin li {
+	margin-top: 3px;
+	margin-bottom: -1px;
+}
+#layoutAside .aside-wrap .my-share li a, #layoutAside .aside-wrap .recycle-bin li a {
+	display: block;
+	width: 209px;
+	height: 31px;
+	line-height: 31px;
+	font-size: 14px;
+	color: #333333;
+	border-top: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
+	background: #f0f0f0;
+}
+#layoutAside .aside-wrap .my-share li a:hover, #layoutAside .aside-wrap .recycle-bin li a:hover {
+	background: #e5e5e5;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid #f8f8f8;
+	background: -webkit-linear-gradient(top, #dbdbdb, #e3e3e3);
+	background: -moz-linear-gradient(top, #dbdbdb, #e3e3e3);
+	background: -o-linear-gradient(top, #dbdbdb, #e3e3e3);
+	background: -ms-linear-gradient(top, #dbdbdb, #e3e3e3);			/* IE 10 && IE Edge */
+	background: linear-gradient(top, #dbdbdb, #e3e3e3);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#dbdbdb,endColorstr=#e3e3e3); 
+	/* ie7.ie8.ie9 gradientType=1代表横向渐变，gradientType=0代表纵向淅变 */
+	+background: #e5e5e5;	/* ie6.ie7 hack */
+}
+#layoutAside .aside-wrap .my-share li span.text, .recycle-bin li span.text {
+	display: inline-block;
+	width: 151px;
+	height: 31px;
+	padding-left: 32px;
+}
+#layoutAside .aside-wrap .my-share li span.aside-icon {
+	display: inline-block;
+	width: 23px;
+	height:22px;
+	background: url(../images/SkyDrive/navigator_7ebb24a.png) no-repeat;
+	background-position: 0 0;
+	position: relative;
+	left: -1px;
+	top: 4px;
+}
+#layoutAside .aside-wrap .my-share li span.icon8 {
+	background-position: 0 0px;
+}
+#layoutAside .aside-wrap .my-share li a.mshare:hover span.icon8 {
+	background-position: -23px 0;
+}
+#layoutAside .aside-wrap .my-share li a.mshare span.share-title {
+	position: relative;
+    top: -2px;
+    left: 4px;
+}
+/*recycle-bin*/
+#layoutAside .aside-wrap .recycle-bin li span.aside-icon {
+	display: inline-block;
+	width: 23px;
+	height:22px;
+	background: url(../images/SkyDrive/navigator_7ebb24a.png) no-repeat;
+	background-position: 0 0;
+	position: relative;
+	left: -1px;
+	top: 4px;
+}
+#layoutAside .aside-wrap .recycle-bin li span.icon9 {
+	background-position: 0 -22px;
+}
+#layoutAside .aside-wrap .recycle-bin li a.recycle:hover span.icon9 {
+	background-position: -23px -22px;
+}
+#layoutAside .aside-wrap .recycle-bin li a.recycle span.recycle-title {
+	position: relative;
+    top: -2px;
+    left: 4px;
+}
+/*plat-classification*/
+#layoutAside .aside-wrap .plat-classification {
+	width: 209px;
+	height: 97px;
+	margin-top: 20px;
+	position: relative;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option {
+	width: 174px;
+	height: 53px;
+	padding: 0 17px 44px 18px;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a {
+	display: block;
+	float: left;
+	width: 42px;
+	height: 53px;
+	margin-right: 4px;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a.plat-more {
+	width: 32px;
+	height: 53px;
+	position: relative;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a p{
+	width: 42px;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+	color: #656565;
+	font-family: tahoma;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a.plat-more p {
+	width: 32px;
+	text-align: center;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a:hover p {
+	color: #237de2;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a .plat-bg {
+	display: block;
+	width: 42px;
+	height: 37px;
+	background: url(../images/SkyDrive/category_341e0a6.png) no-repeat;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a .bg1 {
+	background-position: 8px -64px;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a .bg2 {
+	background-position: -63px -64px;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a .bg3 {
+	background-position: 8px -94px;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a .bg4 {
+	background-position: -203px -64px;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a.housekeeper:hover .bg1 {
+	background-position: -27px -64px;
+}
+#layoutAside .aside-wrap .plat-classification .plat-option a.android:hover .bg2 {
+	background-position: -98px -64px;
+}
+
+#layoutAside .aside-wrap .plat-classification .plat-option a.iphone:hover .bg3 {
+	background-position: -27px -94px;
+}
+
+#layoutAside .aside-wrap .plat-classification .plat-option a.plat-more:hover .bg4 {
+	background-position: -238px -64px;
+}
+/*plat-more 弹出层*/
+#layoutAside .aside-wrap .plat-classification .more-pannel {
+	display: none;
+	width: 300px;
+	height: 112px;
+	border: 1px solid #c6c6c6;
+	background: #f9f9f9;
+	box-shadow: 0 2px 5px rgba(51,51,51,0.3);
+	position: absolute;
+	left: 188px;
+	top: -38px;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel .arrow-left {
+	display: block;
+	position: absolute;
+	width: 8px;
+	height: 13px;
+	background: url(../images/SkyDrive/arrow-left.jpg) no-repeat;
+	left: -8px;
+    top: 50px;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul {
+	padding: 28px 0 0 10px;
+	width: 172px;
+	height: 53px;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul li {
+	float: left;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul li a {
+	display: block;
+	float: left;
+	width: 48px;
+	height: 53px;
+	margin-right: 6px;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul li a p {
+	width: 100%;
+	text-align: center;
+	color: #656565;
+	height: 16px;
+	line-height: 16px;
+	font-family: tahoma;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul li a:hover p {
+	color: #1574dd;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul li a .more-plat {
+	display: block;
+	width: 40px;
+	height: 37px;
+	margin: 0 5px;
+	background: url(../images/SkyDrive/category_341e0a6.png) no-repeat;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul li a.mac {
+	width: 60px;
+	padding-right: 4px;
+	margin-right: 0;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul li a.mac .more3 {
+	wdith: 60px;
+	margin: 0 10px;
+}
+/*wp*/
+#layoutAside .aside-wrap .plat-classification .more-pannel li a.wp .more1{
+	background-position: -128px -63px;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul li a.wp:hover .more1{
+	background-position: -163px -63px;
+}
+/*ipad*/
+#layoutAside .aside-wrap .plat-classification .more-pannel li a.ipad .more2{
+	background-position: -63px -94px;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul li a.ipad:hover .more2{
+	background-position: -98px -94px;
+}
+/*mac*/
+#layoutAside .aside-wrap .plat-classification .more-pannel li a.mac .more3 {
+	background-position: -128px -94px;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel ul li a.mac:hover .more3 {
+	background-position: -163px -94px;
+}
+/*二维码*/
+#layoutAside .aside-wrap .plat-classification .more-pannel .qr-code {
+	width: 112px;
+	height: 90px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel .qr-code img {
+	margin: 0 28px 0 29px;
+}
+#layoutAside .aside-wrap .plat-classification .more-pannel .qr-code p {
+	width: 112px;
+	height: 35px;
+	text-align: center; 
+	line-height: 35px;
+	font-weight: 700;
+	color: #666666;
+}
+/*remaining*/
+#layoutAside .aside-wrap .remaining {
+	wdith: 209px;
+	height: 155px;
+	margin-top: 43px;
+}
+#layoutAside .aside-wrap .remaining .remaining-quota {
+	width: 157px;
+	height: 26px;
+	margin: 0 26px;
+}
+/*指示条*/
+#layoutAside .aside-wrap .remaining .remaining-quota .remain-bar {
+	height: 6px;
+	background: #c6cfda;
+	margin-bottom: 2px;
+}
+#layoutAside .aside-wrap .remaining .remaining-quota .remain-bar .strip {
+	width: 47px;
+	height: 6px;
+	background: #74c709;
+}
+/*text*/
+#layoutAside .aside-wrap .remaining .remaining-quota .text {
+	position: relative;
+	width: 155px;
+	height: 20px;
+	line-height: 20px;
+}
+#layoutAside .aside-wrap .remaining .remaining-quota .text .num {
+	position: absolute;
+	left: 0;
+	top: 0px;
+}
+#layoutAside .aside-wrap .remaining .remaining-quota .text a {
+	position: absolute;
+	right:0;
+	color: #0066cc;
+} 
+
+/*整个页面右侧部分*/
+#layoutMain {
+    position: absolute;
+	top: 49px;
+    left: 210px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+	box-shadow: -5px 0 5px rgba(173,173,173,0.2);
+	z-index: 105;
+}
+#layoutMain .toobar {
+	height: 50px;
+	position: relative;
+	left: 0;
+	right: 0;
+    z-index: 4;
+    border-bottom: 1px solid #d2d2d2;
+    background: #F7F7F7
+}
+/*bar*/
+#layoutMain .toobar .bar {
+	padding: 11px 25px;
+	width: 500px;
+	height: 28px;
+}
+#layoutMain .toobar .bar>a {
+	display: inline-block;
+	width: 113px;
+	height: 26px;
+	background: -webkit-linear-gradient(top, #ffffff, #f1f1f1);
+	background: -moz-linear-gradient(top, #ffffff, #f1f1f1);
+	background: -o-linear-gradient(top, #ffffff, #f1f1f1);
+	background: -ms-linear-gradient(top, #ffffff, #f1f1f1);			/* IE 10 && IE Edge */
+	background: linear-gradient(top, #ffffff, #f1f1f1);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffff,endColorstr=#f1f1f1); 
+	/* ie7.ie8.ie9 gradientType=1代表横向渐变，gradientType=0代表纵向淅变 */
+	+background: #f9f9f9;	/* ie6.ie7 hack */
+	border-radius: 2px;
+	margin-right: 8px;
+	border: 1px solid #a7a7a7;
+	position: relative;
+}
+#layoutMain .toobar .bar >a:hover {
+	background: #fbfcfc;
+}
+/*上传*/
+#layoutMain .toobar .bar >a.upload {
+	width: 105px;
+	border: 1px solid #1362b4;
+	background: url(../images/SkyDrive/btn_2d148f3.png) no-repeat;
+	background-position: -91px -646px;
+}
+#layoutMain .toobar .bar >a.upload:hover {
+	background-position: -91px -684px;
+}
+#layoutMain .toobar .bar >a.upload .text {
+	right: -48px;
+	color: #fff;
+}
+#layoutMain .toobar .bar >a.upload .icon {
+	background: url(../images/SkyDrive/sys-icon_9b5f22d.png) no-repeat;
+	width: 20px;
+	height: 24px;
+	display: inline-block;
+	background-position: 0 0;
+	position: absolute;
+	left: 16px;
+    top: 1px;
+}
+/*新建文件夹*/
+#layoutMain .toobar .bar >a.new-dir {
+	width: 111px;
+}
+#layoutMain .toobar .bar >a.new-dir .text {
+	right: -37px;
+}
+#layoutMain .toobar .bar >a.new-dir .icon {
+	background: url(../images/SkyDrive/sys-icon_9b5f22d.png) no-repeat;
+	width: 20px;
+	height: 24px;
+	display: inline-block;
+	background-position: -150px 0;
+	position: absolute;
+	left: 13px;
+    top: 1px;
+}
+#layoutMain .toobar .bar >a.new-dir:hover .icon {
+	background-position: -180px 0;
+}
+/*离线下载*/
+#layoutMain .toobar .bar >a.off-down {
+	width: 101px;
+}
+#layoutMain .toobar .bar >a.off-down .text {
+	right: -36px;
+}
+#layoutMain .toobar .bar >a.off-down .icon {
+	background: url(../images/SkyDrive/plugin-icon_7318e47.png) no-repeat;
+	width: 20px;
+	height: 24px;
+	display: inline-block;
+	background-position: 0 0;
+	position: absolute;
+	left: 13px;
+    top: 1px;
+}
+#layoutMain .toobar .bar >a.off-down:hover .icon {
+	background-position: -30px 0;
+}
+/*我的设备*/
+#layoutMain .toobar .bar >a.my-dev {
+	width: 113px;
+	background: url(../images/SkyDrive/btn_2d148f3.png) no-repeat;
+	background-position: -83px -261px;
+}
+#layoutMain .toobar .bar >a.my-dev:hover {
+	background-position: -83px -297px;
+}
+#layoutMain .toobar .bar >a.my-dev .text {
+	right: -34px;
+}
+#layoutMain .toobar .bar >a.my-dev .icon {
+	background: url(../images/SkyDrive/plugin-icon_7318e47.png) no-repeat;
+	width: 20px;
+	height: 24px;
+	display: inline-block;
+	background-position: -60px 0;
+	position: absolute;
+	left: 13px;
+    top: 1px;
+}
+#layoutMain .toobar .bar >a.my-dev:hover .icon {
+	background-position: -90px 0;
+}
+#layoutMain .toobar .bar >a .text {
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	position: relative;
+	font-family: "宋体";
+	color: #666666;
+}
+
+/*switch*/
+#layoutMain .toobar .switch {
+	width: 64px;
+	height: 29px;
+	margin: 12px 18px 0 0;
+}
+#layoutMain .toobar .switch a {
+	display: inline-block;
+	width:  32px;
+	height: 29px;
+	float: left;
+	background: url(../images/SkyDrive/list-switch_bdb86de.png) no-repeat;
+}
+#layoutMain .toobar .switch .list-off {
+	background-position: 0 -35px;
+}
+#layoutMain .toobar .switch .list-on {
+	background-position: 0 0;
+}
+#layoutMain .toobar .switch .list-off:hover {
+	background-position: 0 -70px;
+}
+#layoutMain .toobar .switch .table-on {
+	background-position: -33px -35px;
+}
+#layoutMain .toobar .switch .table-off {
+	background-position: -33px 0;
+}
+#layoutMain .toobar .switch .table-off:hover {
+	background-position: -33px -70px;
+}
+
+#layoutMain .multselected {
+	padding-left: 10px;
+	position: relative;
+	left: 0px;
+	right: 0px;
+	height: 100%;
+	font-family: "宋体";
+	color: #666666;
+}
+#layoutMain .multselected .history {
+	position: relative;
+	height: 30px;
+	line-height: 32px;
+	padding-left: 10px;
+}
+#layoutMain .multselected .history .history-list-dir {
+	position: absolute;
+	left: 10px;
+}
+#layoutMain .multselected .history .history-list-tips {
+	position: absolute;
+	right: 22px;
+}
+#layoutMain .multselected .operate {
+	box-sizing: border-box;
+	height: 43px;
+	overflow: hidden;
+	line-height: 43px;
+	border: 1px solid #d2d2d2;
+	border-right: none;
+	background: #f7f7f7;
+	border-radius: 4px 0 0 4px;
+}
+
+#select {
+	float: left;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin-left: 11px;
+	margin-top: 14px;
+}
+
+.default {
+	background: url(../images/SkyDrive/list-view_4e60b0c.png) no-repeat;
+	background-position: -9px -12px;
+}
+
+.selected {
+	background: url(../images/SkyDrive/list-view_4e60b0c.png) no-repeat;
+	background-position: -41px -12px;
+}
+
+.selInfo {
+	display: none;
+	float: left;
+	margin: 0 10px;
+}
+
+.operate a {
+	display: none;
+	position: relative;
+	top: 6px;
+	float: left;
+	box-sizing: border-box;
+	width: 79px;
+	height: 28px;
+	line-height: 26px;
+	padding-left: 40px;
+	margin: 0 5px;
+	border: 1px solid #a7a7a7;
+	color: #666666;
+	border-radius: 3px;
+	background: -webkit-linear-gradient(top, #fff, #f1f1f1);
+	background: -moz-linear-gradient(top, #fff, #f1f1f1);
+}
+
+.operate a span {
+	position: absolute;
+	float: left;
+	width: 20px;
+	height: 24px;
+}
+
+.operate a:nth-of-type(1) span {
+	left: 15px;
+	background: url(../images/SkyDrive/plugin-icon_7318e47.png) no-repeat;
+	background-position: -180px 0;
+}
+
+.operate a:nth-of-type(2) span {
+	left: 13px;
+	background: url(../images/SkyDrive/sys-icon_9b5f22d.png) no-repeat;
+	background-position: -56px 0;
+}
+
+.operate a:nth-of-type(3) span {
+	left: 12px;
+	background: url(../images/SkyDrive/sys-icon_9b5f22d.png) no-repeat;
+	background-position: -204px 0;
+}
+
+.operate a:nth-of-type(4) {
+	background: rgba(0,0,0,0) url(../images/SkyDrive/btn_2d148f3.png) no-repeat;
+	background-position: -58px -261px;
+}
+
+.operate a:nth-of-type(4) span {
+	left: 12px;
+	background: url(../images/SkyDrive/plugin-icon_7318e47.png) no-repeat;
+	background-position: 0 1px;
+}
+
+.operate a:nth-of-type(5),
+a:nth-of-type(6),
+a:nth-of-type(7) {
+	width: 67px;
+	text-align: center;
+	padding-left: 0;
+}
+
+.operate .rename {
+	cursor: default;
+	border-color: #ccced3;
+	color: #c8d9ec;
+	background: -webkit-linear-gradient(top, #f8faff, #f1f3f8);
+	background: -moz-linear-gradient(top, #f8faff, #f1f3f8);
+}
+
+.operate .aCloud {
+	width: 139px;
+}
+
+/*container*/
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+.container .wrap {
+	height: 100%;
+	/*overflow-y: auto;*/
+}
+
+.item {
+	width: 142px;
+	height: 122px;
+	float: left;
+	margin: 4px 4px 0 0;
+	text-align: center;
+}
+
+
+.file-icon {
+	box-sizing: border-box;
+	width: 94px; 
+	height: 96px;
+	border: 2px solid transparent;
+	padding: 23px 0 0 16px;
+	margin: 0 auto;
+	position: relative;
+	cursor: pointer;
+}
+
+.fileCover {
+	width: 100%;
+	height: 100%;
+	background: url(../images/SkyDrive/gridIcon_7165cae.png) no-repeat 0 -100px;
+}
+
+.borderShow {
+	border: 2px solid #2e80dc;
+}
+
+.fileSelect {
+	display: block;
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	width: 18px;
+	height: 18px;
+}
+
+.selectShow {
+	background: url(../images/SkyDrive/checkbox_aea6cfd.png) no-repeat;
+	background-position: 0 -42px;
+}
+
+.selectNow {
+	background: url(../images/SkyDrive/checkbox_aea6cfd.png) no-repeat;
+	background-position: -36px -42px;
+}
+
+.file-name {
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.edit-name{
+	display: none;
+	box-sizing: border-box;
+	padding: 1px 0 0 5px;
+	width: 100%;
+	height: 26px;
+	overflow: hidden;
+}
+
+.edit-name .box {
+	float: left;
+	width: 80px;
+	height: 22px;
+	border: 1px solid #d2d2d2;
+	background: #fff;
+	color: #323232;
+	text-indent: 4px;
+}
+
+.edit-name span {
+	float: left;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #a7a7a7;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 0 1px;
+	border-radius: 3px;
+}
+
+.ok {
+	background: #f1f1f1 url(../images/SkyDrive/concern_btn.png) no-repeat;
+	background-position: -26px -125px;
+}
+
+.cancel {
+	background: #f1f1f1 url(../images/SkyDrive/concern_btn.png) no-repeat;
+	background-position: -45px -125px;
+}
+
+
+/* 
+		利用媒体查询，做到窗口变小时元素加宽度，可以避免浮动被挤下来；
+		但是IE8以下，不支持css3的媒体查询，这里暂不做处理，以后用JS处理；
+*/
+@media all and (max-width: 1196px){
+	#dynamicLayout_0 .header .info>ul li.ad {
+		display: none;
+	}
+}
+@media all and (max-width: 1100px){
+	#dynamicLayout_0 .header .info>ul li.search {
+		display: none;
+	}
+	#dynamicLayout_0 .header .info>ul li.user-name {
+		border-left: none;
+	}
+}
+@media all and (max-width: 1048px){
+	#dynamicLayout_0 .header {
+		width: 1048px;
+	}
+	#layoutMain {
+		width: 838px;
+	}
+}

@@ -1,0 +1,115 @@
+
+/* CSS Reset */
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,form,input,textarea,th,td,select { 
+	margin: 0; 
+	padding: 0;
+}
+em { 
+	font-style: normal;
+}
+li { 
+	list-style: none;
+}
+a { 
+	text-decoration: none; 
+	outline: none;
+}
+img { 
+	border: none; 
+	vertical-align: top;
+}
+table { 
+	border-collapse: collapse;
+}
+input,textarea { 
+	outline: none;
+}
+textarea { 
+	resize:none; 
+	overflow: auto; 
+}
+body { 
+	font-size:12px; 
+	font-family:"Microsoft yahei";
+	-webkit-font-smoothing: antialiased;
+}
+
+/* public */
+.fl { float: left;}
+.fr { float: right;}
+.clear { zoom: 1;}	/*ie*/
+.clear:after { content: ""; display:block; clear: both; font-size: 0; height: 0; visibility: hidden; }
+
+.gradient {
+	background: -webkit-linear-gradient(top, #ffffff, #f8f8f8);
+	background: -moz-linear-gradient(top, #ffffff, #f8f8f8);
+	background: -o-linear-gradient(top, #ffffff, #f8f8f8);
+	background: -ms-linear-gradient(top, #ffffff, #f8f8f8);			/* IE 10 && IE Edge */
+	background: linear-gradient(top, #ffffff, #f8f8f8);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffff,endColorstr=#f8f8f8); 
+	/* ie7.ie8.ie9 gradientType=1代表横向渐变，gradientType=0代表纵向淅变 */
+	+background: #f9f9f9;	/* ie6.ie7 hack */
+}
+
+.radius {	
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;				/* ie6.ie7.ie8 不支持圆角 */
+}
+
+.box-shadow {
+	box-shadow: 10px 10px 5px #888888;	/* ie9+.Chrome.Safari.Firefox.Opera支持阴影 */
+}
+
+/* 超出的文字显示省略号 */
+.ellipse {
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+/* css下拉菜单箭头图标 */
+a,div {
+	/*display: inline-block;*/
+	/*margin: 20px;*/
+}
+.triangle_up {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid #F33;
+	_border-left: 4px solid #ffffff;	/*只有IE6认识，颜色值要视背景颜色而定*/
+	_border-right: 4px solid #ffffff;
+}
+.triangle_down {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #F33;
+	_border-left: 4px solid #ffffff;
+	_border-right: 4px solid #ffffff;
+}
+.triangle_left {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 4px solid #999;
+	_border-top: 4px solid #ffffff;
+	_border-bottom: 4px solid #ffffff;
+}
+.triangle_right {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid #999;
+	_border-top: 4px solid #ffffff;
+	_border-bottom: 4px solid #ffffff;
+} 
